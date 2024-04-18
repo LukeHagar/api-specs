@@ -6,7 +6,7 @@ post:
   summary: Execute a saved search by ID
   operationId: executeSavedSearch
   parameters:
-  - $ref: '../parameters/path/search/id.yaml'
+    - $ref: '../parameters/path/search/id.yaml'
   requestBody:
     description: |
       When saved search execution is triggered by a scheduled search, *scheduleId* will specify the ID of the triggering scheduled search.
