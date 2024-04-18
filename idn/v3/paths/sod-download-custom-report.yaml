@@ -3,7 +3,7 @@ get:
     - UserContextAuth: [idn:sod-violation:read]
   operationId: getCustomViolationReport
   tags:
-    - SOD Policy
+    - SOD Policies
   summary: Download custom violation report
   description: >-
     This allows to download a specified named violation report for a given report reference.
@@ -23,22 +23,22 @@ get:
       description: Custom Name for the  file.
       example: custom-name
   responses:
-    '200':
+    "200":
       description: Returns the zip file with given custom name that contains the violation report file.
       content:
         application/zip:
           schema:
             type: string
             format: binary
-    '400':
-      $ref: '../responses/400.yaml'
-    '401':
-      $ref: '../responses/401.yaml'
-    '403':
-      $ref: '../responses/403.yaml'
-    '404':
-      $ref: '../responses/404.yaml'
-    '429':
-      $ref: '../responses/429.yaml'
-    '500':
-      $ref: '../responses/500.yaml'
+    "400":
+      $ref: "../responses/400.yaml"
+    "401":
+      $ref: "../responses/401.yaml"
+    "403":
+      $ref: "../responses/403.yaml"
+    "404":
+      $ref: "../responses/404.yaml"
+    "429":
+      $ref: "../responses/429.yaml"
+    "500":
+      $ref: "../responses/500.yaml"
