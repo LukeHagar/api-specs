@@ -1015,7 +1015,7 @@ paths:
     $ref: './v3/paths/campaign-reports-configuration.yaml'
   /campaign-filters:
     $ref: './v3/paths/campaign-filters.yaml'
-  /campaign-filters/{id}:
+  /campaign-filters/{filterId}:
     $ref: './v3/paths/campaign-filter.yaml'
   /campaign-filters/delete:
     $ref: './v3/paths/campaign-filters-delete.yaml'
